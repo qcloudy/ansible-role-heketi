@@ -59,7 +59,7 @@
     state: directory
     owner: "{{ heketi_service_user }}"
     group: "{{ heketi_service_user }}"
-    recurse: true
+#     recurse: true
 
 - name: "configure | Initialize Heketi Service template"
   template:
