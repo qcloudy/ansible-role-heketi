@@ -29,7 +29,7 @@
 
 - name: "configure | Initialize Heketi Configuration template"
   copy:
-    content: "{{ lookup('template', 'templates/heketi-' + heketi_node_executor + '.json.j2') | to_nice_json }}"
+    content: "{{ lookup('template', 'templates/heketi.json.j2') | to_nice_json }}"
     dest: "{{ heketi_config_dir }}/{{ heketi_config_filename }}"
     mode: "0644"
   notify: restart heketi
