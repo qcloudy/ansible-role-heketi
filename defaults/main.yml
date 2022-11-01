@@ -26,6 +26,13 @@ heketi_configure: true
 heketi_inititalize_cluster: false
 
 ### Heketi configuration vairables
+heketi_node_kubernetes_url: 'https://kubernetes.host:8443'
+heketi_node_kubernetes_certfile: '/path/to/crt.file'
+heketi_node_kubernetes_insecure: false
+heketi_node_kubernetes_user: 'kubernetes username'
+heketi_node_kubernetes_password: 'kubernetes pass'
+heketi_node_kubernetes_namespace: 'kubernetes namespace'
+
 heketi_install_command_link: '/usr/bin/heketi'
 heketi_cli_install_command_link: '/usr/bin/heketi-cli'
 heketi_config_dir: '/etc/heketi'
